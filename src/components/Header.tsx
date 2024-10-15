@@ -1,16 +1,32 @@
-import { Link } from 'react-router-dom'
 import  Logo  from '../images/ab-high-resolution-logo-white-transparent.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+
+
 
 function Header() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700, 
+    });
+  }, []);
+
   return (
-    <div className="flex justify-around text-white text-xl p-10 align-middle">
-      <h1><Link to={"/landingpage"}>Acceuil</Link></h1>
-      <h1>A propos</h1>
-      <img src={Logo} alt="" className="h-10" />
-      <h1>Mon Travail</h1>
-      <h1>Me Contacter</h1>
+    <div className="flex justify-start items-center p-4 sticky" data-aos="fade-down">
+      <div> 
+        <img src={Logo} alt="" className="h-10" />
+      </div>
+      <div className='ml-auto text-3xl flex gap-2 text-white'>
+        <a href="https://www.linkedin.com/in/aboubakar-bamba-5b2279274/"><FaLinkedin /></a>
+        <a href="https://github.com/Aboubakar2004?tab=repositories"><FaGithub /></a>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
+
