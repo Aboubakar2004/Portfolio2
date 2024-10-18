@@ -28,31 +28,35 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="h-screen flex justify-start items-center text-white text-center">
-      <div className="" data-aos="fade-right">
-        <h1 className="text-5xl text-left leading-none">ABOUBAKAR <br /> BAMBA</h1>
-        <h1 className="text-2xl mt-4 text-left flex gap-2">
+    <div className="lg:h-screen h-screen  flex flex-col lg:flex-row justify-around  items-center text-white text-center overflow-hidden">
+      <div className="flex flex-col text-left" data-aos="fade-right">
+        <h1 className="text-4xl lg:text-5xl leading-none">ABOUBAKAR <br /> BAMBA</h1>
+        <h2 className="text-xl lg:text-2xl mt-4 flex gap-2">
           Étudiant aspirant à devenir  
-          <span className="text-cool-grey text-left"><h1 ref={ref} /></span>
-        </h1>
+          <span className="text-cool-grey"><h1 ref={ref} /></span>
+        </h2>
       </div>
-      <motion.div
-        animate={{
-          y: [0, -50, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="ml-auto"
-      >
-        <img src={ImageMe} alt="Image flottante" className="h-96 w-96 rounded-full object-cover shadow-2xl" data-aos="zoom-in" />
-      </motion.div>
-    </div>
+    <motion.div
+    animate={{
+      y: [0, -50, 0],
+    }}
+    transition={{
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    className="mt-8 lg:mt-0 lg:ml-auto"
+  >
+    <img 
+      src={ImageMe} 
+      alt="Image flottante" 
+      className="h-64 w-64 lg:h-96 lg:w-96 rounded-full object-cover shadow-2xl" 
+      data-aos="zoom-in" 
+    />
+    </motion.div>
+</div>
+
   );
 }
 
 export default LandingPage;
-
-
