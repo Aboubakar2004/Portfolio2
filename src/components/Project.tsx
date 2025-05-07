@@ -39,7 +39,8 @@ function Project() {
         <a href="https://aboubakar-virtual-r.vercel.app/">
           <div className="bg-ultra-violet p-5 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cool-grey hover:text-white duration-150 rounded-xl leading-10">
             <h1 className="text-2xl">02</h1>
-            <p>Lorem Ipsum</p>
+            <p>Aboubakar VirtualR
+            </p>
             <img
               src={AboubakarRImage}
               alt="Poké Ball"
@@ -52,7 +53,7 @@ function Project() {
         <a href="https://movie-catalogue-six.vercel.app/">
           <div className="bg-ultra-violet p-5 transition shadow-xl ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cool-grey hover:text-white duration-150 rounded-xl leading-10">
             <h1 className="text-2xl">03</h1>
-            <p>Lorem Ipsum</p>
+            <p>Movie Catalogue</p>
             <img
               src={StreamingImage}
               alt="Movie Catalogue"
